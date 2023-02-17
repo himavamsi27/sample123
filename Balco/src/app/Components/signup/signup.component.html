@@ -1,0 +1,241 @@
+<br><br><br><br><br>
+<!-- <form (ngSubmit)="onAddPatient()">
+    <input type="text" [(ngModel)]="patient.pName" name="name" placeholder="Ebter Your name">
+    <br><br>
+    <input type="text" [(ngModel)]="patient.pAdd" name="padd" placeholder="Ebter Your address">
+    <br><br>
+    <input type="text" [(ngModel)]="patient.pDob" name="dob" placeholder="Ebter Your Date of Birth">
+    <br><br>
+    <input type="text" [(ngModel)]="patient.pMobileNo" name="mobile" placeholder="Ebter Your Mobile number">
+    <br><br>
+    <button>Add Neew onAddPatient</button>
+    
+</form> -->
+
+
+<!-- 
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <form (ngSubmit)="onAddPatient()">
+  
+                <div class="row">
+                  <div class="col-md-12 mb-8">
+  
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)]="patient.pName" name="name" class="form-control form-control-lg" placeholder="Enter Patient Name" >
+                      <label class="form-label" for="firstName">Patient Name</label>
+                    </div>
+  
+                  </div>
+                  
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+  
+                    <div class="form-outline datepicker w-100">
+                      <input type="text" [(ngModel)]="patient.pDob" name="dob" class="form-control form-control-lg" id="birthdayDate" placeholder="Enter Patient Date Of Birth">
+                      <label for="birthdayDate" class="form-label">Birthday</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <h3 class="mb-2 pb-1">Gender: </h3  >
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" checked />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)]="patient.pAdd" name="padd" class="form-control form-control-lg" placeholder="Enter Patient Address">
+                      <label class="form-label" for="emailAddress">Address</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)]="patient.pMobileNo" name="mobile" class="form-control form-control-lg" />
+                      <label class="form-label" for="phoneNumber">Phone Number</label>
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="mt-4 pt-2">
+                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section> -->
+
+
+  <!-- Section: Design Block -->
+<section class=" text-center text-lg-start">
+  <style>
+    .rounded-t-5 {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .rounded-tr-lg-0 {
+        border-top-right-radius: 0;
+      }
+
+      .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+      }
+    }
+  </style>
+  <div class="card mb-3" style="background-color: #16a085;border-style: none;">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-lg-4 d-none d-lg-flex">
+        <img src="https://st.depositphotos.com/1771835/1477/i/950/depositphotos_14779771-stock-photo-portrait-of-confident-young-doctor.jpg" alt="Trendy Pants and Shoes"
+          class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body py-5 px-md-5" >
+          <section>
+            <div class="container py-5 h-100">
+              <div class="row justify-content-center align-items-center h-100">
+                <div class="" >
+                  <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                      <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                      <form (ngSubmit)="onAddPatient()">
+          
+                        <div class="row">
+                          <div class="col-md-12 mb-8">
+          
+                            <div class="form-outline">
+                              <input type="text" [(ngModel)]="patient.pName" name="name" class="form-control form-control-lg" placeholder="Enter Patient Name" >
+                              <label class="form-label" for="firstName">Patient Name</label>
+                            </div>
+          
+                          </div>
+                          
+                        </div>
+          
+                        <div class="row">
+                          <div class="col-md-6 mb-4 d-flex align-items-center">
+          
+                            <div class="form-outline datepicker w-100">
+                              <input type="text" [(ngModel)]="patient.pDob" name="dob" class="form-control form-control-lg" id="birthdayDate" placeholder="Enter Patient Date Of Birth">
+                              <label for="birthdayDate" class="form-label">Birthday</label>
+                            </div>
+          
+                          </div>
+                          <div class="col-md-6 mb-4">
+          
+                            <h3 class="mb-2 pb-1">Gender: </h3  >
+          
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                value="option1" checked />
+                              <label class="form-check-label" for="femaleGender">Female</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                value="option2" />
+                              <label class="form-check-label" for="maleGender">Male</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                value="option3" />
+                              <label class="form-check-label" for="otherGender">Other</label>
+                            </div>
+          
+                          </div>
+                        </div>
+          
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <div class="form-outline">
+                              <input type="text" [(ngModel)]="patient.pAdd" name="padd" class="form-control form-control-lg" placeholder="Enter Patient Address">
+                              <label class="form-label" for="emailAddress">Address</label>
+                            </div>
+          
+                          </div>
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <div class="form-outline">
+                              <input type="text" [(ngModel)]="patient.pMobileNo" name="mobile" class="form-control form-control-lg" placeholder="Enter Patient Phone number"/>
+                              <label class="form-label" for="phoneNumber">Phone Number</label>
+                            </div>
+          
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <div class="form-outline">
+                              <input type="email" [(ngModel)]="patient.patientEmail" name="patientEmail" class="form-control form-control-lg" placeholder="Enter Patient Email">
+                              <label class="form-label" for="Email">Email</label>
+                            </div>
+          
+                          </div>
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <div class="form-outline">
+                              <input type="password" [(ngModel)]="patient.patientPassword" name="patientPassword" class="form-control form-control-lg" placeholder="Enter Password"/>
+                              <label class="form-label" for="password">Password</label>
+                            </div>
+          
+                          </div>
+                        </div>
+                        <div class="mt-4 pt-2">
+                          <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                        </div>
+          
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+

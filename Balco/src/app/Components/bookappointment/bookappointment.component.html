@@ -1,0 +1,122 @@
+<br><br><br><br><br>
+<!-- 
+<section class="book" id="book">
+
+    <h1 class="heading"> <span>book</span> now </h1>    
+
+    <div class="row">
+
+        
+        <form #bookapoinment="ngForm" (ngSubmit)="onclickbook()">
+            <h3>book appointment</h3>
+            <input type="text" [(ngModel)]="patient.pName" name="name" placeholder="Enter Your name" class="box">
+            <input type="text" [(ngModel)]="patient.pAdd" name="name" placeholder="Enter Patient Address" class="box">
+            <input type="number" [(ngModel)]="patient.pMobileNo" name="name" placeholder="Enter Mobile Number" class="box">
+            <input type="date" [(ngModel)]="patient.pDob" name="name" placeholder="Enter Patient Date of Birth" class="box">
+            <input type="submit" value="book now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+<mat-form-field appearance="fill">
+    <mat-label>Doctor's</mat-label>
+    <mat-select>
+        <mat-select-trigger>
+            <div *ngFor="let doctor of doctors" >
+                    <h3>{{doctor.doctorName}}</h3>
+            
+            </div>
+        </mat-select-trigger>
+    </mat-select>
+  </mat-form-field>
+<br><br><br><br> -->
+
+<section class="book" id="book">
+<div class="card">
+    <h1 class="heading"> <span>book</span> now </h1>    
+
+    <div class="row">
+
+        
+        <form #bookapoinment="ngForm" (ngSubmit)="onclickbook()">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                    <input type="text" [(ngModel)]="patient.pName" name="name" placeholder="Enter Your name" class="box">
+                    <label class="form-label" for="form6Example1">Patient's First name</label>
+                </div>
+              </div>
+              <!-- <div class="col">
+                <div class="form-outline">
+                    <input type="text" [(ngModel)]="patient.pName" name="name" placeholder="Enter Your Last name" class="box">
+                    <label class="form-label" for="form6Example2">Patient's Last name</label>
+                </div>
+              </div> -->
+            </div>
+          
+
+            <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                      <input type="text" [(ngModel)]="patient.patientEmail" name="patientEmail" placeholder="Enter Patient Email id" class="box">
+                      <label class="form-label" for="form6Example1">Patient Email Id</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="number" [(ngModel)]="patient.pMobileNo" name="name" placeholder="Enter Mobile Number" class="box">
+                      <label class="form-label" for="form6Example2">Patient Mobile Number</label>
+                  </div>
+                </div>
+              </div>
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="text" [(ngModel)]="patient.pAdd" name="pAdd" placeholder="Enter Patient Address" class="box">
+              <label class="form-label" for="form6Example3">Patient Address</label>
+            </div>
+
+
+            <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="date" [(ngModel)]="patient.pDob" name="pDob" placeholder="Enter Patient Date of Birth" class="box">
+                      <label class="form-label" for="form6Example1">Appoinment Date</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                      <input type="text" name="name" placeholder="Enter Doctor name" class="box">
+                      <label class="form-label" for="form6Example2">Doctor'sList</label>
+                  </div>
+                </div>
+              </div>
+            
+  
+                      
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form6Example7" rows="4"class="box" placeholder="Enter reason for booking."> </textarea>
+              <label class="form-label" for="form6Example7">Message To Doctor</label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Book Appoinment</button>
+          </form>
+
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
